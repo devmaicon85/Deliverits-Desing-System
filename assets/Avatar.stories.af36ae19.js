@@ -1,0 +1,2 @@
+import{A as t}from"./index.236fbf47.js";import"./index.4964621c.js";import"./iframe.538600ed.js";import"./index.e35318a1.js";import"./jsx-runtime.7f437457.js";const c={title:"Data display/Avatar",component:t,args:{src:"https://github.com/devmaicon85.png",alt:"Dev Maicon"},argTypes:{src:{control:{type:"text"}}}},p={},e={args:{src:void 0}},m=["Primary","WithFallback"];export{p as Primary,e as WithFallback,m as __namedExportsOrder,c as default};
+//# sourceMappingURL=Avatar.stories.af36ae19.js.map
