@@ -1,0 +1,3 @@
+{
+  "extends": "@deliverits-ui/eslint-config"
+}
