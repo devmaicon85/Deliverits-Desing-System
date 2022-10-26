@@ -6,9 +6,9 @@ on:
             - devmaicon
 
 jobs:
-    build-and-deploy:
+    deploy-docs:
+        name: Deploy Docs
         runs-on: ubuntu-latest
-
         steps:
             - name: Checkout
               uses: actions/checkout@v3
@@ -17,8 +17,8 @@ jobs:
               uses: actions/setup-node@v3
               with:
                   node-version: 16
-                  cache: 'npm'
-                  cache-dependency-path: '**/package-lock.json'
+                  cache: "npm"
+                  cache-dependency-path: "**/package-lock.json"
 
             - name: Install dependencies
               run: npm ci --legacy-peer-deps
@@ -26,8 +26,8 @@ jobs:
             - name: Build Storybook
               run: npm run build
               env:
-                TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-                TURBO_TEAM: devmaicon
+                  TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+                  TURBO_TEAM: devmaicon
 
             - name: Deploy Storybook
               working-directory: ./packages/docs
