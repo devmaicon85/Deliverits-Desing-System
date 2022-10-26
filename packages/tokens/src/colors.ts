@@ -11,6 +11,7 @@ export const colors = {
   gray800: '#202024',
   gray900: '#121214',
 
+  deliverits100: '#ffc5c7',
   deliverits300: '#f9333b',
   deliverits500: '#ec1c24',
   deliverits700: '#c2131a',
