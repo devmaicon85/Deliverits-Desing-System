@@ -1,6 +1,7 @@
 {
   "name": "@deliverits-ui/eslint-config",
   "license": "ISC",
+  "version": "1.0.0",
   "private": true,
   "main": "index.js",
   "devDependencies": {
